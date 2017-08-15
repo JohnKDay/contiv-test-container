@@ -3,7 +3,7 @@
 FROM alpine:latest
 MAINTAINER John K. Day (johnkday@cisco.com)
 
-RUN apk --update add nginx php5-fpm iperf nmap netcat-openbsd && \
+RUN apk --update add bash curl nginx php5-fpm iperf nmap netcat-openbsd && \
     mkdir -p /run/nginx && \
     rm -rf /var/cache/apk/*
 
